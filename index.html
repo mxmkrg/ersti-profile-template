@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vorstellung – EDIT ME: Dein Name</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1 id="name"><!-- EDIT ME: -->Vorname Nachname</h1>
+      <p class="tagline"><!-- EDIT ME: -->Angewandte Informatik, 1. Semester</p>
+    </header>
+
+    <section aria-labelledby="about-title">
+      <h2 id="about-title">Über mich</h2>
+      <p><!-- EDIT ME: -->Ich bin ... (kurzer Satz zu dir: Interessen, Standort, Fokus).</p>
+    </section>
+
+    <section aria-labelledby="hobbies-title">
+      <h2 id="hobbies-title">Hobbys</h2>
+      <ul class="hobbies">
+        <!-- EDIT ME: Ersetze/ergänze deine Hobbys -->
+        <li>Fotografie</li>
+        <li>Laufen</li>
+        <li>Kochen</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="company-title">
+      <h2 id="company-title">Unternehmen</h2>
+      <p><!-- EDIT ME: -->
+        Ich arbeite bei
+        <a href="https://example.com" target="_blank" rel="noreferrer noopener">Firmenname</a>.
+      </p>
+      <!-- Optional: Firmenlogo einbinden -->
+      <!-- EDIT ME: Bilddatei hochladen oder URL nutzen -->
+      <!-- <img src="logo.png" alt="Logo von Firmenname" class="logo" loading="lazy" /> -->
+    </section>
+
+    <section aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills (1–10)</h2>
+      <ul class="skills" role="list">
+        <!-- EDIT ME:
+             - Trage Skillnamen ein
+             - Setze data-score auf eine Zahl von 1–10
+        -->
+        <li data-score="6">
+          <span class="skill-name">HTML</span>
+          <div class="skill-meter">
+            <meter min="1" max="10" value="6" aria-label="HTML Kenntnisstand"></meter>
+            <span class="score" aria-hidden="true">6/10</span>
+          </div>
+        </li>
+        <li data-score="5">
+          <span class="skill-name">CSS</span>
+          <div class="skill-meter">
+            <meter min="1" max="10" value="5" aria-label="CSS Kenntnisstand"></meter>
+            <span class="score" aria-hidden="true">5/10</span>
+          </div>
+        </li>
+        <li data-score="4">
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-meter">
+            <meter min="1" max="10" value="4" aria-label="JavaScript Kenntnisstand"></meter>
+            <span class="score" aria-hidden="true">4/10</span>
+          </div>
+        </li>
+        <li data-score="3">
+          <span class="skill-name">Git</span>
+          <div class="skill-meter">
+            <meter min="1" max="10" value="3" aria-label="Git Kenntnisstand"></meter>
+            <span class="score" aria-hidden="true">3/10</span>
+          </div>
+        </li>
+      </ul>
+      <p class="hint">Tipp: Ändere nur die Zahl in data-score, der Rest passt sich an.</p>
+    </section>
+
+    <section aria-labelledby="fun-title">
+      <h2 id="fun-title">Fun Fact</h2>
+      <p><!-- EDIT ME: -->Ich kann ... / Ich habe ... / Eine unerwartete Fähigkeit ist ...</p>
+    </section>
+
+    <footer>
+      <p class="links">
+        <!-- EDIT ME: Optional soziale Links -->
+        <!-- <a href="https://github.com/deinhandle">GitHub</a> · <a href="https://www.linkedin.com/in/deinhandle/">LinkedIn</a> -->
+      </p>
+      <small>Zuletzt aktualisiert: <time id="lastUpdated"></time></small>
+    </footer>
+  </main>
+</body>
+</html>
